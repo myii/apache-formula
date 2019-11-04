@@ -183,6 +183,7 @@ suites:
           '*':
             - apache
             - apache.mod_security
+            - apache.mod_perl2
       pillars:
         top.sls:
           base:
