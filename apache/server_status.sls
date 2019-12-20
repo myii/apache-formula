@@ -18,3 +18,8 @@ include:
       - module: apache-restart
       - module: apache-reload
       - service: apache
+  cmd.run:
+    - name: |
+        cat "{{ apache.confdir }}/server-status{{ apache.confext }}"
+    - require:
+      - file: {{ apache.confdir }}/server-status{{ apache.confext }}

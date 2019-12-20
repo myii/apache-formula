@@ -15,3 +15,10 @@ apache:
     sec_pcre_match_limit: '15000'
     sec_pcre_match_limit_recursion: '15000'
     sec_debug_log_level: '3'
+  server_status_access:
+    ip:
+      - 10.8.8.0/24
+      - 10.10.0.0/16
+    host:
+      - foo.example.com
+      - bar.example.com

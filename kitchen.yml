@@ -183,6 +183,7 @@ suites:
           '*':
             - apache
             - apache.mod_security
+            - apache.server_status
       pillars:
         top.sls:
           base:
