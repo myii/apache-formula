@@ -3,6 +3,13 @@
 control 'apache mod_security configuration' do
   title 'should match desired lines'
 
+  only_if(
+    'Disabled on Arch Linux ' \
+    '...'
+  ) do
+    !%w[arch].include?(platform[:name])
+  end
+
   modspec_file =
     case platform[:family]
     when 'redhat', 'fedora'
