@@ -1,5 +1,5 @@
 module.exports = {
-  branch: 'master',
+  branch: 'antora',
   repositoryUrl: 'https://github.com/saltstack-formulas/apache-formula',
   plugins: [
       ['@semantic-release/commit-analyzer', {
